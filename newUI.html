@@ -1,0 +1,148 @@
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=DM+Sans:wght@300;400;500;600&display=swap');
+  .p{font-family:'DM Sans',sans-serif;background:#fafaf8;border:0.5px solid var(--color-border-tertiary);border-radius:16px;overflow:hidden;max-width:680px;margin:0 auto}
+  .hdr{background:rgba(255,255,255,0.92);border-bottom:1px solid #eeeef4;padding:12px 20px;display:flex;align-items:center;gap:12px}
+  .lm{width:32px;height:32px;background:linear-gradient(135deg,#c0392b,#e74c3c);border-radius:8px;display:flex;align-items:center;justify-content:center;color:white;font-size:14px;box-shadow:0 2px 8px rgba(192,57,43,0.35)}
+  .ln{font-family:'Lora',serif;font-size:1rem;font-weight:600;color:#1a1a2e}.ln i{color:#c0392b;font-style:italic}
+  .ecg{flex:1;height:22px;opacity:0.4}
+  .hbg{font-size:0.62rem;font-weight:500;letter-spacing:0.8px;text-transform:uppercase;color:#5c5c7a;background:#f7f7fb;border:1px solid #eeeef4;border-radius:4px;padding:3px 8px}
+  .hero{text-align:center;padding:28px 20px 12px;background:linear-gradient(to bottom,rgba(255,230,228,0.15),transparent)}
+  .eyebrow{display:inline-block;font-size:0.62rem;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:#c0392b;background:#fdf1f0;border:1px solid #e8b4b0;border-radius:999px;padding:3px 10px;margin-bottom:10px}
+  .h1{font-family:'Lora',serif;font-size:1.55rem;font-weight:600;color:#1a1a2e;line-height:1.2;margin-bottom:8px}
+  .hp{font-size:0.8rem;color:#5c5c7a;max-width:340px;margin:0 auto;line-height:1.6}
+  .card{background:white;margin:16px;border-radius:14px;border:1px solid #eeeef4;box-shadow:0 4px 16px rgba(26,26,46,0.08);position:relative;padding-top:3px;overflow:hidden}
+  .card::before{content:'';position:absolute;top:0;left:28px;right:28px;height:3px;background:linear-gradient(90deg,#c0392b,#e74c3c,#f39c12,#16a085);border-radius:0 0 3px 3px}
+  .pills{display:flex;gap:6px;flex-wrap:wrap;padding:14px 20px 0}
+  .pill{font-size:0.62rem;font-weight:500;color:#9494aa;background:#f7f7fb;border:1px solid #eeeef4;border-radius:999px;padding:3px 9px}
+  .sec{padding:14px 20px 0}
+  .sechd{display:flex;align-items:flex-start;gap:10px;margin-bottom:12px}
+  .secnum{font-family:'Lora',serif;font-size:1.2rem;font-weight:600;color:#e8b4b0;line-height:1;min-width:22px}
+  .sectitle{font-weight:600;font-size:0.82rem;color:#1a1a2e}
+  .secsub{font-size:0.68rem;color:#9494aa;margin-top:1px}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+  .field label{display:block;font-size:0.65rem;font-weight:600;color:#5c5c7a;margin-bottom:4px}
+  .inp{width:100%;padding:8px 10px;background:#f7f7fb;border:1.5px solid #eeeef4;border-radius:8px;font-family:'DM Sans',sans-serif;font-size:0.78rem;color:#1a1a2e}
+  .chips{display:flex;gap:5px}
+  .ch{flex:1;padding:7px 8px;background:#f7f7fb;border:1.5px solid #eeeef4;border-radius:7px;font-size:0.7rem;font-weight:500;color:#9494aa;text-align:center}
+  .ch.on{background:#fdf1f0;border-color:#c0392b;color:#c0392b}
+  .div{height:1px;background:#eeeef4;margin:14px 20px}
+  .sbtn{display:block;margin:14px 20px 18px;padding:12px;background:#1a1a2e;border:none;border-radius:10px;color:white;font-family:'DM Sans',sans-serif;font-size:0.88rem;font-weight:600;text-align:center;cursor:pointer}
+  .ftr{border-top:1px solid #eeeef4;padding:10px 20px;text-align:center;font-size:0.62rem;color:#9494aa;background:rgba(255,255,255,0.7)}
+  .field{display:flex;flex-direction:column}
+  .inpw{position:relative}
+  .unit{position:absolute;right:8px;top:50%;transform:translateY(-50%);font-size:0.65rem;color:#9494aa;font-weight:500}
+  .inpw .inp{padding-right:30px}
+</style>
+<div class="p">
+  <div class="hdr">
+    <div class="lm">♥</div>
+    <div class="ln">HeartSense<i> AI</i></div>
+    <svg class="ecg" viewBox="0 0 300 22" preserveAspectRatio="none">
+      <polyline points="0,11 40,11 50,3 60,19 70,11 110,11 118,2 126,20 134,11 174,11 182,5 190,17 198,11 238,11 246,3 254,19 262,11 300,11" fill="none" stroke="#e8b4b0" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <div class="hbg">Clinical Screening</div>
+  </div>
+
+  <div class="hero">
+    <div class="eyebrow">Cardiovascular Risk Assessment</div>
+    <div class="h1">Know Your Heart's<br>Health Profile</div>
+    <p class="hp">Enter your clinical measurements and our ML model will estimate your cardiovascular risk.</p>
+  </div>
+
+  <div class="card">
+    <div class="pills">
+      <span class="pill">🔒 Private — not stored</span>
+      <span class="pill">🤖 ML-powered</span>
+      <span class="pill">⚡ Instant results</span>
+    </div>
+
+    <div class="sec">
+      <div class="sechd">
+        <div class="secnum">01</div>
+        <div><div class="sectitle">Personal Information</div><div class="secsub">Basic demographic details</div></div>
+      </div>
+      <div class="grid">
+        <div class="field">
+          <label>Age</label>
+          <div class="inpw"><input class="inp" type="text" value="55" readonly><span class="unit">yrs</span></div>
+        </div>
+        <div class="field">
+          <label>Biological Sex</label>
+          <div class="chips">
+            <div class="ch on">Male</div>
+            <div class="ch">Female</div>
+          </div>
+        </div>
+        <div class="field" style="grid-column:1/-1">
+          <label>Chest Pain Type</label>
+          <select class="inp" style="appearance:none;padding-right:28px"><option>Atypical Angina (ATA)</option></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="div"></div>
+
+    <div class="sec">
+      <div class="sechd">
+        <div class="secnum">02</div>
+        <div><div class="sectitle">Vital Signs</div><div class="secsub">Measurements from your last check-up</div></div>
+      </div>
+      <div class="grid">
+        <div class="field">
+          <label>Resting Blood Pressure</label>
+          <div class="inpw"><input class="inp" type="text" value="130" readonly><span class="unit">mmHg</span></div>
+        </div>
+        <div class="field">
+          <label>Cholesterol</label>
+          <div class="inpw"><input class="inp" type="text" value="240" readonly><span class="unit">mg/dl</span></div>
+        </div>
+        <div class="field">
+          <label>Fasting Blood Sugar &gt;120</label>
+          <div class="chips">
+            <div class="ch on">No (≤120)</div>
+            <div class="ch">Yes (&gt;120)</div>
+          </div>
+        </div>
+        <div class="field">
+          <label>Resting ECG</label>
+          <select class="inp" style="appearance:none"><option>Normal</option></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="div"></div>
+
+    <div class="sec">
+      <div class="sechd">
+        <div class="secnum">03</div>
+        <div><div class="sectitle">Cardiac Metrics</div><div class="secsub">Stress test and exercise data</div></div>
+      </div>
+      <div class="grid">
+        <div class="field">
+          <label>Max Heart Rate</label>
+          <div class="inpw"><input class="inp" type="text" value="150" readonly><span class="unit">bpm</span></div>
+        </div>
+        <div class="field">
+          <label>Exercise-Induced Angina</label>
+          <div class="chips">
+            <div class="ch on">No</div>
+            <div class="ch">Yes</div>
+          </div>
+        </div>
+        <div class="field">
+          <label>Oldpeak — ST Depression</label>
+          <div class="inpw"><input class="inp" type="text" value="1.5" readonly><span class="unit">mm</span></div>
+        </div>
+        <div class="field">
+          <label>ST Slope</label>
+          <select class="inp" style="appearance:none"><option>Flat →</option></select>
+        </div>
+      </div>
+    </div>
+
+    <div class="sbtn">♥  Assess My Risk</div>
+  </div>
+
+  <div class="ftr">HeartSense AI · For educational purposes only — not a substitute for medical advice</div>
+</div>
