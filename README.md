@@ -228,7 +228,7 @@ Health check endpoint — returns API and model load status.
 
 **Khilan Kaneriya**
 Machine Learning Intern — CodeAlpha
-[GitHub](https://github.com/khilan023) · [LinkedIn]([https://linkedin.com/in/yourprofile](https://www.linkedin.com/in/khilan-kaneriya-651883320/))
+[GitHub](https://github.com/khilan023) · [LinkedIn](https://www.linkedin.com/in/khilan-kaneriya-651883320/)
 
 ---
 
